@@ -68,11 +68,11 @@ Instead of 2 heaps, you can use a self-balancing Binary Search Tree (like an AVL
 1. Divide problem into 3 subproblems. Here are the groupings:
     1. __Numbers < 0__: You have 2 options:
 		    1. Use 2-heap solution (that we coded in original solution), or
-	    	1. Use 1 array, which represents 1 bucket
+	  	2. Use 1 array, which represents 1 bucket
     1. __0 <= Numbers <= 100__: Use 100 buckets using an array of size 100
     1. __100 < Numbers__: You have 2 options:
 	    	1. Use 2-heap solution (that we coded in original solution), or
-		    1. Use 1 array, which represents 1 bucket
+		     2. Use 1 array, which represents 1 bucket
 1. For each number we get in the stream, insert it into 1 of the 3 groupings, keeping track of the count of numbers in each of these 3 groupings
 1. To find the median, see which grouping the median must fall into and find it there.
 
